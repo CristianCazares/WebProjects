@@ -19,8 +19,14 @@ nav{
     align-content: center;    
 }
 
+.main{
+    display: grid;
+
+}
+
 .home{
     /*background-color: #D4D0C8;*/
+    background-color: #d3ccbc;
     grid-column: span 2;
     margin-left: 1vw;
     margin-right: 1vw;
