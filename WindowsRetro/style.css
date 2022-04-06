@@ -1,0 +1,68 @@
+body{
+    font-family: Tahoma, Arial;
+    margin: 0 0 0 0;
+    background-color: #038387;
+    height: 93%;
+}
+
+nav{
+    position: fixed;
+    height: 3.5em;
+    width: 100%;
+    bottom: 0;
+    background-color: #C6C3C6;
+    border-top: 2px solid #FFF;
+    box-shadow: inset 0.1em -0.1em 0.2em #000000;
+    
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-content: center;    
+}
+
+.home{
+    /*background-color: #D4D0C8;*/
+    grid-column: span 2;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.homeimg{
+    width: 2.5em;
+    grid-column: span 1;
+}
+
+.hometext{
+    grid-column: span 2;
+}
+
+.item{
+    cursor: pointer;
+    display: grid;
+    padding-left: 1vh;
+    align-items: center;
+    height: 100%;
+    box-shadow: inset -0.1em -0.1em .2em;
+    margin-left: 1vw;
+    border-top: 2px solid #FFF;
+    border-left: 1px solid #FFF;
+    font-weight: bolder;
+    color:black;
+    height: 2.5em;
+}
+
+.item:hover{
+    background-color: antiquewhite;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a.visited{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
