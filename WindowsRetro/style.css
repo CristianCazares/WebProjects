@@ -52,6 +52,7 @@ p{
 }
 
 .home{
+    cursor: no-drop;
     padding: 0;
     background-color: #d3ccbc;
     grid-column: span 2;
