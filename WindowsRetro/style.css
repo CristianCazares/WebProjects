@@ -19,10 +19,15 @@ nav{
     align-content: center;    
 }
 
-.main{
-    display: grid;
-
+p{
+    /*
+    font-size: 50px;
+    font-size: 20px;
+    */
+    font-size: 1.5vw;
+    font-size: clamp(10px, 1.5vw, 15px);
 }
+
 
 
 
@@ -81,6 +86,49 @@ nav{
     cursor: pointer;
 }
 
+.main{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.about_window{
+    height: 80%;
+    width: 80%;
+    background-color: #C6C3C6;
+    box-shadow: 1em 1em #06383a;
+    display: grid;
+    grid-template-rows: 5% auto;
+}
+
+
+.toolbar{
+    display: grid;
+    grid-template-columns: auto 3%;
+    align-items: center;
+    background-color: #000080;
+    color: white;
+    font-weight: bolder;
+}
+
+.close{
+    background-color: tomato;
+    cursor: pointer;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 1vw;
+    font-family: Tahoma, Arial;
+    font-weight: bolder;
+    color: white;
+}
+
+.about_content{
+    padding: 3em;
+    text-align: justify;
+}
 
 a{
     text-decoration: inherit;
