@@ -24,24 +24,7 @@ nav{
 
 }
 
-.home{
-    /*background-color: #D4D0C8;*/
-    background-color: #d3ccbc;
-    grid-column: span 2;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-}
 
-.homeimg{
-    width: 2.5vw;
-    grid-column: span 1;
-}
-
-.hometext{
-    grid-column: span 2;
-}
 
 .item{
     cursor: pointer;
@@ -55,12 +38,32 @@ nav{
     font-weight: bolder;
     color:black;
     height: 100%;
-    font-size: 1vw;
+    
+    font-size: 2vmin;
 }
 
 .item:hover, .social:hover{
     background-color: antiquewhite;
 }
+
+.home{
+    padding: 0;
+    background-color: #d3ccbc;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.homeimg{
+    width: 2.5vw;
+    grid-column: span 1;
+}
+
+.hometext{
+    grid-column: span 2;
+}
+
+
 .socials{
     display: grid;
     grid-template-columns: auto auto auto;
