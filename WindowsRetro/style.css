@@ -7,7 +7,7 @@ body{
 
 nav{
     position: fixed;
-    height: 3.5em;
+    height: 3em;
     width: 100%;
     bottom: 0;
     background-color: #C6C3C6;
@@ -15,7 +15,7 @@ nav{
     box-shadow: inset 0.1em -0.1em 0.2em #000000;
     
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: 10% 20% 20% 20% 20% 8%;
     align-content: center;    
 }
 
@@ -48,22 +48,39 @@ nav{
     display: grid;
     padding-left: 1vh;
     align-items: center;
-    height: 100%;
     box-shadow: inset -0.1em -0.1em .2em;
     margin-left: 1vw;
     border-top: 2px solid #FFF;
     border-left: 1px solid #FFF;
     font-weight: bolder;
     color:black;
-    height: 2.5em;
+    height: 100%;
 }
 
-.item:hover{
+.item:hover, .social:hover{
     background-color: antiquewhite;
 }
+.socials{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: inset #ffffff 2px;
+}
+
+.social{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.socialimg{
+    height: 3vh;
+    cursor: pointer;
+}
+
 
 a{
     text-decoration: inherit;
+
     color: inherit;
     cursor: auto;
 }
