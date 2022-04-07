@@ -35,7 +35,7 @@ nav{
 }
 
 .homeimg{
-    width: 2.5em;
+    width: 2.5vw;
     grid-column: span 1;
 }
 
@@ -55,6 +55,7 @@ nav{
     font-weight: bolder;
     color:black;
     height: 100%;
+    font-size: 1vw;
 }
 
 .item:hover, .social:hover{
@@ -73,7 +74,7 @@ nav{
 }
 
 .socialimg{
-    height: 3vh;
+    height: 2vw;
     cursor: pointer;
 }
 
