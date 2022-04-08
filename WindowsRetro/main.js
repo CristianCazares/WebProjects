@@ -24,5 +24,5 @@ function about(){
 
 function showTL(){
     $("button.showTL").remove();
-    $("div.about_content").append('<img src="https://www.xda-developers.com/files/2021/10/Windows-version-history-4.jpg" alt="Windows Timeline" style="height: clamp(20px, 40vw, 30%)"></img>');
+    $("div.about_content").append('<img src="https://www.xda-developers.com/files/2021/10/Windows-version-history-4.jpg" alt="Windows Timeline" style="height: clamp(20px, 30%, 200px)"></img>');
 }
