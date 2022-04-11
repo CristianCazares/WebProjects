@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spotify-web-api-js/1.5.2/spotify-web-api.js" integrity="sha512-lNAdXpUi8E6pEVDtriZ7PbNF1m9W4wYKawVkmkppB9aTBPNMmQPQmb/9LiH3qXG10DLHleRDPK4Sm2v14dIO7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <input type="text" id="title"> by
+    <input type="text" id="artist">
+    <button onclick="findLyrics()">Add</button>
+    <table id="songList">
+        <tr>
+            <th>Artist</th>
+            <th>Title</th>
+        </tr>
+    </table>
+    <div id="lyrics"></div>
+    <button onclick="deleteEntry()" disabled>Delete</button>
+</body>
+</html>

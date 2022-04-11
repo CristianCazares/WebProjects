@@ -1,0 +1,28 @@
+body{
+    font-family: Helvetica;
+}
+
+.song{
+    cursor: pointer;
+}
+
+#songList{
+    width: 60%;
+    border-collapse: collapse;
+}
+
+#songList td, #songList th{
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+#songList tr:nth-child(even){background-color: #dedede;}
+#songList tr:hover{
+    background-color: #b1b1b1;
+}
+
+#songList th{
+    background-color: rgb(203, 82, 61);
+    color: white;
+    font-weight: bolder;
+}
