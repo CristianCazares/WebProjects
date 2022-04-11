@@ -86,6 +86,7 @@ function deleteEntry(){
 	
 }
 
+/*
 function findLyricsP(id){
 	//console.log("https://api.lyrics.ovh/v1/" + artist + "/" + title);
 	$.ajax({
@@ -97,3 +98,4 @@ function findLyricsP(id){
 		}
 	});
 }
+*/
