@@ -14,14 +14,16 @@
 <body>
     <input type="text" id="title"> by
     <input type="text" id="artist">
-    <button onclick="findLyrics()">Add</button>
-    <table id="songList">
-        <tr>
-            <th>Artist</th>
-            <th>Title</th>
-        </tr>
-    </table>
-    <button onclick="deleteEntry()" disabled style="cursor: not-allowed;">Delete</button>
+    <button onclick="addSong()">Add</button>
+    <div id="songList-grid">
+        <table id="songList">
+            <tr>
+                <th>Artist</th>
+                <th>Title</th>
+            </tr>
+        </table>
+    </div>
+    <button onclick="deleteEntries(this)" data-state="delete" disabled style="cursor: not-allowed;">Delete</button>
     <div id="lyrics"></div>
 </body>
 </html>
