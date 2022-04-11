@@ -7,11 +7,11 @@ function Song(title, artist, lyrics){
 }
 
 function main(){
-	findLyricsP("5 seconds of summer", "Teeth");
-	findLyricsP("Twenty One Pilots", "Lane Boy");
+	findLyricsP("6 seconds of summer", "Teeth");
+	/*findLyricsP("Twenty One Pilots", "Lane Boy");
 	findLyricsP("Imagine Dragons", "Enemy");
 	findLyricsP("5 Seconds of Summer", "She Looks So Perfect");
-	findLyricsP("VALORANT", "Die For You");
+	findLyricsP("VALORANT", "Die For You");*/
 }
 
 main();
@@ -49,7 +49,10 @@ function findLyricsP(artist, title){
 			songs.push(newSong);
 			updateSongList(newSong, iterator);
 			iterator++;
-		}
+		},
+		error: function(xhr, status, error) {
+			console.log("COULD NOT FIND: " + title + "/" + artist);
+		}		
 	});
 }
 
