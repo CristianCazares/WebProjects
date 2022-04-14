@@ -8,14 +8,26 @@ body{
     color: #FFF;
 }
 
+#body{
+    display: grid;
+    place-items: center;
+}
+
 input{
     font-family: Helvetica;
+    width: 80%;
     height: 5vh;
-    font-size: 2vh;
     background: none;
     border: none;
     border-bottom: solid 1px #FFF;
     color: #FFF;
+}
+
+#input_section{
+    width: 50%;
+    display: grid;
+    place-items: center;    
+    grid-template-columns: auto 5% auto 10% 10%;
 }
 
 input::placeholder{
@@ -26,6 +38,11 @@ input:focus{
     outline: none;
     border: none;
     border-bottom: solid 2px #FFF;
+    background-color: #191C20;
+}
+
+#add{
+    width: 100%;
 }
 
 
@@ -44,7 +61,8 @@ input:focus{
 }
 
 #songList td, #songList th{
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #songList th{
@@ -60,6 +78,10 @@ input:focus{
     background-color: #111417;
 }
 /*--------------------------------------------------*/
+
+#lyrics{
+    text-align: center;
+}
 
 
 .deletable:hover{

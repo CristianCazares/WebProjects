@@ -63,13 +63,11 @@ function updateSongList(song, index){
 function showLyrics(index, entry){
 	//If the clicked one is hidden
 	if(entry.dataset.state == "hidden"){
-		console.log("Hide all of them");
 		//Hide all of them
 		var songsEntries = getSongs();
 		songsEntries.forEach(song => {
 			song.dataset.state = "hidden";
 		});
-		console.log("Show it");
 		//Show the clicked one
 		lyricsSpace.innerHTML = songs[index].lyrics.replace(new RegExp("\n","g"), "<br>");
 		entry.dataset.state = "showed";

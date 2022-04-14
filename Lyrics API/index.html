@@ -15,20 +15,28 @@
     
 </head>
 <body>
-    <input type="text" id="title" placeholder="Song"> by
-    <input type="text" id="artist" placeholder="Artist">
-    <button onclick="addSong()">Add</button>
-    <br>
-    <br>
-    <div id="songList-grid">
-        <table id="songList">
-            <tr>
-                <th>Artist</th>
-                <th>Title</th>
-            </tr>
-        </table>
+    <div id="body">
+    <div></div>
+        <div id="input_section">
+            <input type="text" id="title" placeholder="Song">
+            <h3 style="text-align: center;">by</h3>
+            <input type="text" id="artist" placeholder="Artist">
+            <button id="add" onclick="addSong()">Add</button>
+            <div class="alert"></div>
+        </div>
+        <br>
+        <br>
+        <div id="songList-grid">
+            <table id="songList">
+                <tr>
+                    <th>Artist</th>
+                    <th>Title</th>
+                </tr>
+            </table>
+        </div>
+        <!--<button onclick="deleteEntries(this)" data-state="delete" disabled style="cursor: not-allowed;">Delete</button>-->
+        <div id="lyrics"></div>
+    <div></div>
     </div>
-    <!--<button onclick="deleteEntries(this)" data-state="delete" disabled style="cursor: not-allowed;">Delete</button>-->
-    <div id="lyrics"></div>
 </body>
 </html>
