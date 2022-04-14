@@ -8,11 +8,11 @@ function Song(title, artist, lyrics){
 }
 
 function main(){
-	findLyricsP("5 seconds of summer", "Teeth");
-	findLyricsP("Twenty One Pilots", "Lane Boy");
-	findLyricsP("Imagine Dragons", "Enemy");
-	findLyricsP("5 Seconds of Summer", "She Looks So Perfect");
-	findLyricsP("VALORANT", "Die For You");
+	findLyrics("5 seconds of summer", "Teeth");
+	findLyrics("Twenty One Pilots", "Lane Boy");
+	/*findLyrics("Imagine Dragons", "Enemy");
+	findLyrics("5 Seconds of Summer", "She Looks So Perfect");
+	findLyrics("VALORANT", "Die For You");*/
 }
 
 main();
@@ -23,10 +23,10 @@ main();
 
 
 function addSong(){
-	findLyricsP(document.getElementById("artist").value, document.getElementById("title").value);
+	findLyrics(document.getElementById("artist").value, document.getElementById("title").value);
 }
 
-function findLyricsP(artist, title){
+function findLyrics(artist, title){
 	$.ajax({
 		async: false,
 		type: 'GET',
@@ -48,6 +48,7 @@ function updateSongList(song, index){
 	entry.setAttribute("class", "song");
 	entry.setAttribute("onclick", "showLyrics(" + index + ", this)");
 	entry.setAttribute("data-state", "hidden");
+	
 	
 	var cellArtist = document.createElement("td");
 	cellArtist.innerHTML = song.artist;
@@ -94,7 +95,6 @@ function deleteEntries(button){
 		button.dataset.state = "delete";
 	}
 }
-
 function deleteEntry(entry){
 	entry.remove();
 }

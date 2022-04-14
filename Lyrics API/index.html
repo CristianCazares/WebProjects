@@ -9,12 +9,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spotify-web-api-js/1.5.2/spotify-web-api.js" integrity="sha512-lNAdXpUi8E6pEVDtriZ7PbNF1m9W4wYKawVkmkppB9aTBPNMmQPQmb/9LiH3qXG10DLHleRDPK4Sm2v14dIO7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <input type="text" id="title"> by
-    <input type="text" id="artist">
+    <input type="text" id="title" placeholder="Song"> by
+    <input type="text" id="artist" placeholder="Artist">
     <button onclick="addSong()">Add</button>
+    <br>
+    <br>
     <div id="songList-grid">
         <table id="songList">
             <tr>
@@ -23,7 +28,7 @@
             </tr>
         </table>
     </div>
-    <button onclick="deleteEntries(this)" data-state="delete" disabled style="cursor: not-allowed;">Delete</button>
+    <!--<button onclick="deleteEntries(this)" data-state="delete" disabled style="cursor: not-allowed;">Delete</button>-->
     <div id="lyrics"></div>
 </body>
 </html>

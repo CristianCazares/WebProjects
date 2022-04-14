@@ -1,41 +1,65 @@
 body{
     font-family: Helvetica;
+    background-color: #203a43;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+input{
+    font-family: Helvetica;
+    font-weight: bolder;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #FFF;
+    color: #FFF;
+}
+
+input::placeholder{
+    color: #b9b9b9;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #FFF;
 }
 
 
 #songList-grid{
-    width: 60%;
+    width: 50%;
     display: grid;
-    grid-template-columns: 90% 10%;
+    border-radius: 0.5em;
+    background-color: #191C20;
+    place-items: center;
 }
 
 /*-----------------TABLE: SONG LIST-----------------*/
 #songList{
+    width: 98%;
     border-collapse: collapse;
 }
 
 #songList td, #songList th{
-    border: 1px solid #ddd;
     padding: 1em;
 }
 
-#songList tr:nth-child(even){
-    background-color: #dedede;
-}
-#songList tr:hover{
-    background-color: #b1b1b1;
-}
-
 #songList th{
-    background-color: #cb523d;
+    border-bottom: solid 3px #3D4249;
     color: white;
     font-weight: bolder;
 }
-/*--------------------------------------------------*/
-
 .song{
     cursor: pointer;
+    border-top: solid 1px #3D4249;
 }
+.song:hover{
+    background-color: #111417;
+}
+/*--------------------------------------------------*/
+
 
 .deletable:hover{
     background-color: #ffadad !important;
