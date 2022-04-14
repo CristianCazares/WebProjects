@@ -1,6 +1,6 @@
 body{
     font-family: Helvetica;
-    background-color: #203a43;
+    background-color: #25282C;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -10,7 +10,8 @@ body{
 
 input{
     font-family: Helvetica;
-    font-weight: bolder;
+    height: 5vh;
+    font-size: 2vh;
     background: none;
     border: none;
     border-bottom: solid 1px #FFF;
@@ -18,7 +19,7 @@ input{
 }
 
 input::placeholder{
-    color: #b9b9b9;
+    color: #4c535c;
 }
 
 input:focus{
