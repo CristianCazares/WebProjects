@@ -71,7 +71,7 @@ function showLyrics(index, entry){
 			song.dataset.state = "hidden";
 		});
 		//Show the clicked one
-		lyricsSpace.innerHTML = songs[index].lyrics.replace(new RegExp("\n+","g"), "<br>");
+		lyricsSpace.innerHTML = songs[index].lyrics.replace(new RegExp("\n\n|\n","g"), "<br>");
 		entry.dataset.state = "showed";
 	}else{
 		//If the clicked one is showed. Hide it
