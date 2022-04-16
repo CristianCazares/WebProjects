@@ -13,6 +13,7 @@ function main(){
 	/*findLyrics("Imagine Dragons", "Enemy");
 	findLyrics("5 Seconds of Summer", "She Looks So Perfect");
 	findLyrics("VALORANT", "Die For You");*/
+	wordOnLyrics(songs[0]);
 }
 
 main();
@@ -36,6 +37,7 @@ function findLyrics(artist, title){
 			songs.push(newSong);
 			updateSongList(newSong, iterator);
 			iterator++;
+			console.log(data.lyrics);
 		},
 		error: function(xhr, status, error) {
 			console.log("COULD NOT FIND: " + title + "/" + artist);
@@ -69,7 +71,7 @@ function showLyrics(index, entry){
 			song.dataset.state = "hidden";
 		});
 		//Show the clicked one
-		lyricsSpace.innerHTML = songs[index].lyrics.replace(new RegExp("\n","g"), "<br>");
+		lyricsSpace.innerHTML = songs[index].lyrics.replace(new RegExp("\n+","g"), "<br>");
 		entry.dataset.state = "showed";
 	}else{
 		//If the clicked one is showed. Hide it
@@ -104,7 +106,7 @@ function getSongs(){
 }
 
 var resultLyrics;
-function wordOnLyrics(){
+function wordOnLyrics(inputSong){
 	songs.forEach(song => {
 		lyrics = song.lyrics;
 		console.log(lyrics);
