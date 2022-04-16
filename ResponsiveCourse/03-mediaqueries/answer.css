@@ -57,38 +57,7 @@ Recent articles
 Letter to the editor
 
 */
-@media ( min-width: 35em ) {
-    .editor-letter {
-        display: grid;
-        grid-template-columns: repeat( 4, 1fr );
-        grid-column-gap: 2%;
-    }
-    .editor-letter .hed {
-        grid-column: 1 / -1;
-    }
-    .letter-author {
-        grid-column: 1;
-    }
-    .letter-content {
-        grid-column: 2 / span 3;
-    }
-}
-@media ( min-width: 35em ) and ( max-width: 60em ) {
-    .editor-letter aside,
-    .editor-letter .teaser-list {
-        display: contents;
-    }
-}
-@media ( min-width: 60em ) {
-    .editor-letter {
-        display: grid;
-        grid-template-columns: repeat( 5, 1fr );
-        grid-column-gap: 2.5%;
-    }
-    .editor-letter aside {
-        grid-column: 5;
-    }
-}
+
 
 /*
 
