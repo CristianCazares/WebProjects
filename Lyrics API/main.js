@@ -102,3 +102,12 @@ function deleteEntry(entry){
 function getSongs(){
 	return document.querySelectorAll("[class=song]");
 }
+
+var resultLyrics;
+function wordOnLyrics(){
+	songs.forEach(song => {
+		lyrics = song.lyrics;
+		console.log(lyrics);
+		
+	});
+}
