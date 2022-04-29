@@ -2,8 +2,8 @@
 1. Install stuff
 #### Console
 ```batch
-	npm install express, morgan
-	npm install nodemon -D
+npm install express, morgan
+npm install nodemon -D
 ```
 
 2. On the package file
