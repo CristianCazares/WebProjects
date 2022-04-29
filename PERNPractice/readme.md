@@ -14,10 +14,7 @@
 		"start":"node {SERVER_DIR}/index.js",
 		"dev": "nodemon {SERVER_DIR}/index.js"
 	},
-	/*
 	...
-	*/
-	//Make sure this is already on the json file:
 	"dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.0",
