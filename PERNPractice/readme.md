@@ -40,7 +40,13 @@ app.listen(3000);
 console.log("Server up on port {PORT}");
 ```
 
-## Endpoints using ROUTER
+4. Start server (with nodemon)
+#### Console
+```batch
+npm run dev
+```
+
+## Endpoints using Express/Router
 1. On backend create a directorie called "routes"
 2. On said directorie (/routes), create a js file called "taks.routes.js"
 3. Set up Express/Router to create and end point:
