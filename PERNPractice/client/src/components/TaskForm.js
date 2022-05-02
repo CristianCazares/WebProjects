@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Card, CardContent, Grid, TextField, Typography } from '@mui/material';
+import {useNavigate} from 'react-router-dom'
 
 export default function TaskForm() {
-  
+  const navigate = useNavigate();
+
   const [task, setTask] = useState({
     title: '',
     description: '',
@@ -12,9 +14,15 @@ export default function TaskForm() {
     setTask({...task, [e.target.name]: e.target.value});
   }
   
-  const handleSubmit = e =>{
+  const handleSubmit = async (e) =>{
     e.preventDefault();
-    console.log(task);
+    const res = await fetch("http://localhost:4000/tasks",{
+      method: 'POST',
+      body: JSON.stringify(task),
+      headers: {"Content-Type": "application/json"}
+    });
+    const data = await res.json(); 
+    navigate('/');
   };
 
   return (
