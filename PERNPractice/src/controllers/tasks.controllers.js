@@ -1,7 +1,7 @@
 const pool = require('../db');
 
 const home = (req, res, next) => {
-    res.send("homepage");
+    res.send("Home backend");
 }
 
 const getAllTasks = async(req, res, next) => {
