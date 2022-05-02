@@ -1,5 +1,6 @@
 import { Button, Card, CardContent, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function TaskList() {
 
@@ -18,6 +19,7 @@ export default function TaskList() {
     loadTasks();
   }, [])
   
+  const navigate = useNavigate();
   
   const handleDelete = async(id) =>{
     try {
@@ -58,6 +60,7 @@ export default function TaskList() {
               <Button
                 variant='contained'
                 color='inherit'
+                onClick={() => navigate(`/tasks/${task.id}/edit`)}
                 >
                 Edit
               </Button>
@@ -67,7 +70,7 @@ export default function TaskList() {
                 style={{marginLeft: "0.5rem"}}
                 onClick={() => handleDelete(task.id)}
                 >
-                Delete
+                DONE
               </Button>
             </div>
 
