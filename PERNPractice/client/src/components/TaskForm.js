@@ -20,12 +20,11 @@ export default function TaskForm() {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch("http://localhost:4000/tasks",{
+    await fetch("http://localhost:4000/tasks",{
       method: 'POST',
       body: JSON.stringify(task),
       headers: {"Content-Type": "application/json"}
     });
-    //const data = await res.json(); 
 
     setLoading(false);
     navigate('/');
