@@ -1,12 +1,19 @@
 ## Set up node and express
-1. Install stuff
+
+1. Initialize Node
+```batch
+npm init -y
+```
+This creates a package.json file. 
+
+2. Install stuff
 #### Console
 ```batch
 npm install express, morgan
 npm install nodemon -D
 ```
 
-2. On the package file
+3. On the package file
 #### package.json
 ```json
 "scripts": {
@@ -25,7 +32,7 @@ npm install nodemon -D
 }
 ```
 
-3. On the index file of the backend:
+4. On the index file of the backend:
 #### index.js
 ```js
 //import dependencies
@@ -40,7 +47,7 @@ app.listen(3000);
 console.log("Server up on port {PORT}");
 ```
 
-4. Start server (with nodemon)
+5. Start server (with nodemon)
 #### Console
 ```batch
 npm run dev
