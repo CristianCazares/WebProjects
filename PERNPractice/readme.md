@@ -9,9 +9,14 @@ This creates a package.json file.
 2. Install stuff
 #### Console
 ```batch
-npm install express, morgan
+npm install express morgan cors
+```
+Express is the web server, Morgan allows us to print the HTTP Methods on console and Cors run two servers a the same time (one for frontend and the other for backend)
+#### Console
+``` batch
 npm install nodemon -D
 ```
+Nodemon introduces de hability of "hot-reloading" the web server. This means that everytime it detects a file saving/ctrl+s, it reloads the server automatically.
 
 3. On the package file
 #### package.json
